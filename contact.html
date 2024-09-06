@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="contact/contact.css">
+	 
+
+</head>
+
+
+<body>
+	<header>
+        <div class="logo"><b style="color: #185519;">Meal Match Mission</b></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li> <a href="contact.html" class="active">Contact</a> </li>
+                <li><a href="profile.php" >Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger=document.querySelector(".hamburger");
+        hamburger.onclick =function(){
+            navBar=document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <section class="cover" >
+        
+    </section>
+	<p class="heading" style=" margin: 20px;">contact us </p>
+    
+     
+	
+   <!-- <h1 class="heading">Contact Us</h1>  -->
+   <div class="contact-form"> 
+    <form action="feedback.php" method="post"> <label for="name">Name:</label> 
+     <input type="text" id="name" name="name">
+     <br> <label for="email">Email:</label> 
+     <input type="email" id="email" name="email">
+     <br> <label for="message">Message:</label> <textarea id="message" name="message"></textarea>
+     <br> 
+     <input type="submit" value="Send" name="send"> 
+    </form> 
+   </div> 
+   <div class="contact-info" style="padding: 10px;"> 
+    <p>Email: mealmatchmission@gmail.com</p> 
+    <p>Phone: 123-456-7890</p> 
+    <p>Address: 123 xyz street</p> 
+   </div> 
+ 
+  <div class="help">
+    <p style="font-size: 23px; text-align: center; padding:10px;">Help & FAQs?</p>
+
+<button class="accordion">how to donate food ?</button>
+<div class="panel">
+  <p>1)click on donate food in <a href="home.html">home page </a></p>
+  <p>2)fill the details </p>
+  <p>3)click on submit</p>
+</div>
+
+<button class="accordion">How will my donation be used?</button>
+<div class="panel">
+  <p style="padding: 10px;"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ipsum provident ratione doloribus commodi. Perspiciatis, doloremque? Tenetur architecto hic distinctio, corrupti accusamus quam repellat inventore, officia tempora, minima cupiditate nisi.</p>
+</div>
+
+<button class="accordion">What should I do if my food donation is near or past its expiration date?</button>
+<div class="panel">
+  <p style="padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae vel fugit natus omnis labore id accusamus fugiat similique, enim quae in ut doloribus debitis quod officia iure. Exercitationem, repellat.</p>
+  
+</div>
+  </div>
+
+  </div>
+ 
+    
+</body>
+<script type="text/javascript" src="contact/chatbot.js" ></script>
+<script type="text/javascript" src="contact/constants.js" ></script> 
+<script type="text/javascript" src="contact/speech.js" ></script>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {  
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+
+</html>

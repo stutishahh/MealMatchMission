@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px; 
+    background-color: #185519; 
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 3rem; 
+    color: #E8B86D;
+    margin-bottom: 10px; 
+}
+header p {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.25rem; /* Adjust size to your preference */
+    color: #E8B86D;
+}
+p {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem; /* Slightly larger font size for readability */
+    color: #000000;
+}
+
+.ngo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ngo-card {
+    background-color: #FCDE70;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure button is positioned correctly */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.ngo-card:hover {
+    transform: scale(1.05);
+}
+
+.ngo-image img {
+    width: 220px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.ngo-info {
+    flex: 1;
+}
+
+.ngo-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #185519;
+}
+
+.ngo-info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.ngo-info strong {
+    font-weight: bold;
+}
+
+.hover-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px;  /* Adjust as needed */
+}
+
+.hover-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3)
+}
